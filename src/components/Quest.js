@@ -3,13 +3,16 @@ import React, {useEffect, useState } from 'react'
 import { PadreAns, Answer, Stat, User, TextUser, ContainerUser, Check1, Contador } from '../style/app_css'
 import user from '../img/User.png'
 import CloseIcon from '@mui/icons-material/Close';
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { getD } from '../helpers/getData'
+import Swal from 'sweetalert2';
 export const Quest = () => {
 
     ///EStados
     let url = 'https://daily-bits-a.herokuapp.com/'
     let tech = localStorage.getItem('tech')
+            const navigate = useNavigate()
+
     const [idQ, setIdQ] = useState(1)
     const [question, setQuestion] = useState({
         preguntaQ: '',
@@ -23,6 +26,17 @@ export const Quest = () => {
     const handleSumar = () => {
         if (idQ == 0) {
             setIdQ(1)
+        }else if(idQ == 6){
+            Swal.fire({
+                title: 'Test finalizado',
+                showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+                },
+                hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+                }
+              })
+            navigate('/Home')
         }
         setIdQ(idQ + 1)
         console.log(idQ)

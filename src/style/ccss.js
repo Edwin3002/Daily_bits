@@ -1,3 +1,4 @@
+import Check from '@mui/icons-material/Check'
 import styled from 'styled-components'
 
 export let Padre = styled.div`
@@ -114,6 +115,44 @@ export let Name = styled.div`
   font-weight: bold;
 `;
 export let Email = styled.div`
+<<<<<<< HEAD
+margin-top: 20px;
+`
+export let LoginOut = styled.button`
+background-color: transparent;
+border: none;
+margin-top: 40px;
+color: #EF4565;
+font-weight: bold;
+font-size: 120%;
+&:hover{
+    transform: scale(1.2);
+}
+`
+
+
+///Statistics
+export let Stat = styled.div`
+`
+export let Result = styled.div`
+margin: 20px auto;
+border-radius: 5px;
+border:  2PX solid #94A1B2;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 50%;
+align-items: center;
+padding: 10px 0px;
+font-size: 120%;
+@media (max-width:1000px) {
+    
+    width: 90%;
+}
+`
+export let L = styled.div`
+`
+=======
   margin-top: 20px;
 `;
 export let LoginOut = styled.div`
@@ -137,6 +176,7 @@ export let Result = styled.div`
   font-size: 120%;
 `;
 export let L = styled.div``;
+>>>>>>> 12a1615f24d5096267ec2ce893e5b585b665e83b
 export let Num = styled.div`
   float: right;
 `;
@@ -148,6 +188,7 @@ export let ButtonContainer = styled.div`
     padding: 15px;
     width: 100%;
 `
+<<<<<<< HEAD
 
 ///Quest
 
@@ -216,3 +257,5 @@ border: none;
 `
 
 
+=======
+>>>>>>> 12a1615f24d5096267ec2ce893e5b585b665e83b
