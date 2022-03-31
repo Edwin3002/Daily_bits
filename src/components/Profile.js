@@ -3,7 +3,7 @@ import { Email, LoginOut, Name, Photo, Prof } from "../style/app_css";
 import { NavF } from "../style/app_css";
 import Nav from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
-
+import Swal from 'sweetalert2';
 export const Profile = () => {
   const navigate = useNavigate();
 
@@ -24,7 +24,9 @@ export const Profile = () => {
           <LoginOut
             onClick={() => {
               localStorage.removeItem("user");
+              Swal.fire('Su sesion ha sido cerrada')
               navigate("/");
+
             }}
           >
             Close session

@@ -24,9 +24,9 @@ export const Quest = () => {
 
     ///cambia la pregunta
     const handleSumar = () => {
-        if (idQ == 0) {
+        if (idQ === 0) {
             setIdQ(1)
-        }else if(idQ == 6){
+        }else if(idQ === 6){
             Swal.fire({
                 title: 'Test finalizado',
                 showClass: {
