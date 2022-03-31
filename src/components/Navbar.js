@@ -14,15 +14,18 @@ export default function SimpleBottomNavigation() {
     return (
 
             <BottomNavigation
+            
                 showLabels
                 value={value}
                 onChange={(event, newValue) => {
                     setValue(newValue);
                 }}
             >
-                <BottomNavigationAction  as={Link} to="/Home" label="Home" icon={<HomeIcon />} />
-                <BottomNavigationAction as={Link} to="/Statistics" label="Statistics" icon={<BarChartIcon />} />
-                <BottomNavigationAction as={Link} to="/Profile" label="Profile" icon={<AccountCircleIcon />} />
+                
+
+                <BottomNavigationAction  as={Link} to="/Home"  icon={<HomeIcon />}></BottomNavigationAction>
+                <BottomNavigationAction as={Link} to="/Statistics"  icon={<BarChartIcon />} />
+                <BottomNavigationAction as={Link} to="/Profile" icon={<AccountCircleIcon />} />
             </BottomNavigation>
 
     );

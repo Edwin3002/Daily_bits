@@ -1,3 +1,4 @@
+import Check from '@mui/icons-material/Check'
 import styled from 'styled-components'
 
 export let Padre = styled.div`
@@ -101,17 +102,22 @@ font-weight: bold;
 `
 export let Email = styled.div`
 margin-top: 20px;
-
 `
-export let LoginOut = styled.div`
+export let LoginOut = styled.button`
+background-color: transparent;
+border: none;
 margin-top: 40px;
 color: #EF4565;
 font-weight: bold;
+font-size: 120%;
+&:hover{
+    transform: scale(1.2);
+}
 `
+
+
 ///Statistics
-
 export let Stat = styled.div`
-
 `
 export let Result = styled.div`
 margin: 20px auto;
@@ -120,17 +126,84 @@ border:  2PX solid #94A1B2;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-around;
-width: 90%;
+width: 50%;
 align-items: center;
 padding: 10px 0px;
 font-size: 120%;
+@media (max-width:1000px) {
+    
+    width: 90%;
+}
 `
 export let L = styled.div`
-
 `
 export let Num = styled.div`
     float: right;
 `
 
+///Quest
+
+export let Icon = styled.div`
+
+`
+export let PadreAns = styled.div`
+display: flex;
+flex-direction: column;
+
+`
+export let ContainerUser = styled.div`
+margin: 100px auto;
+display: flex;
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    @media (max-width: 1000px) {
+        width: 80%;
+    }
+
+`
+
+export let Answer = styled.div`
+background-color: #232E35;
+margin: 20px auto;
+border-radius: 5px;
+border:  2PX solid #94A1B2;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+width: 50%;
+align-items: center;
+padding: 10px 0px;
+font-size: 120%;
+@media (max-width: 1000px) {
+ width:90% ;
+}
+&:hover{
+    background-color: #232a35;
+    transform: scale(1.03);
+}
+`
+export let User = styled.div`
+width: 15%;
+`
+export let TextUser = styled.div`
+width: 75%;
+margin: 20px;
+font-size: 150%;
+`
+export let Check1 = styled.button`
+font-size: 150%;
+padding: 10px;
+font-weight: bold;
+width: 90%;
+margin: 50px auto;
+border-radius: 10px;
+border: none;
+    background-color: #D4CAF3;
+    box-shadow: 2px 2px #AB90FF;
+    &:hover{
+    transform: scale(1.03);
+}
+`
 
 

@@ -1,0 +1,267 @@
+{
+    "html": [
+        {
+            "id": 1,
+            "pregunta": "¿Qué etiquieta es semánticamente correcta para el contenido principal?",
+            "respuestas": [
+                "main",
+                "section",
+                "header"
+            ],
+            "correcta": "main"
+        },
+        {
+            "id": 2,
+            "pregunta": "¿Qué significa HTML?",
+            "respuestas": [
+                "Hyper Text Markup Language",
+                "Hot Mail",
+                "Hot Pizza"
+            ],
+            "correcta": "Hyper Text Markup Language"
+        },
+        {
+            "id": 3,
+            "pregunta": "¿Cuál es el elemento HTML correcto para insertar un salto de línea?",
+            "respuestas": [
+                "<br>",
+                "<form>",
+                "<div>"
+            ],
+            "correcta": "<br>"
+        },
+        {
+            "id": 4,
+            "pregunta": "¿Con que etiqueta se puede hacer una lista ordenada?",
+            "respuestas": [
+                "<ul>",
+                "<li>",
+                "<ol>"
+            ],
+            "correcta": "<ol>"
+        },
+        {
+            "id": 5,
+            "pregunta": "Organiza la estructura de un documento HTML",
+            "correcta": "<!DOCTYPE html><html><head></head><body></body></html>"
+        }                                                                                               
+    ],
+    "css": [
+        {
+            "id": 1,
+            "pregunta": "¿Qué significa CSS?",
+            "respuestas": [
+                "Cascading Style Sheets",
+                "Creative Style Sheets",
+                "Create Style Sheet"
+            ],
+            "correcta": "Cascading Style Sheets"
+        },
+        {
+            "id": 2,
+            "pregunta": "¿Cuál es el HTML correcto para referirse a una hoja de estilo externa?",
+            "respuestas": [
+                "<style src='styles.css'>",
+                "<link rel='stylesheet' type='text/css' href='styles.css'>",
+                "<stylesheet>styles.css</stylesheet>"
+            ],
+            "correcta": "<link rel='stylesheet' type='text/css' href='styles.css'>"
+        },
+        {
+            "id": 3,
+            "pregunta": "¿Que propiedad se usa para cambiar el color de fondo?",
+            "respuestas": [
+                "color-background",
+                "background-color",
+                "bg-color"
+            ],
+            "correcta": "background-color"
+        },
+        {
+            "id": 4,
+            "pregunta": "¿Que propiedad se usa para cambiar el color de texto?",
+            "respuestas": [
+                "color",
+                "text-color",
+                "fg-color"
+            ],
+            "correcta": "color"
+        },
+        {
+            "id": 5,
+            "pregunta": "¿Que propiedad se usa para modificar el tamaño de la letra?",
+            "respuestas": [
+                "font-size",
+                "text-size",
+                "text-style"
+            ],
+            "correcta": "font-size"
+        }
+    ],
+    "javascript": [
+        {
+            "id": 1,
+            "pregunta": "¿Que le da Javascript a las paginas web?",
+            "respuestas": [
+                "Estructura y contenido",
+                "Estilos",
+                "Funcionalidad y dinamismo"
+            ],
+            "correcta": "Funcionalidad y dinamismo"
+        },
+        {
+            "id": 2,
+            "pregunta": "¿Como se enlaza un archivo externo?",
+            "respuestas": [
+                "<script href='script.js'>",
+                "<script src='script.js'>",
+                "<script name='script.js'>"
+            ],
+            "correcta": "<script src='script.js'>"
+        },
+        {
+            "id": 3,
+            "pregunta": "¿Que metodo se usa para obtener un elemento por su id?",
+            "respuestas": [
+                "document.getElementById()",
+                "document.getItemById()",
+                "document.getHTMLById()"
+            ],
+            "correcta": "document.getElementById()"
+        },
+        {
+            "id": 4,
+            "pregunta": "¿Como se crea una funcion tradicional?",
+            "respuestas": [
+                "function:myFunction()",
+                "createFunction.myFunction()",
+                "function myFunction()"
+            ],
+            "correcta": "function myFunction()"
+        },
+        {
+            "id": 5,
+            "pregunta": "¿Como se comenta el codigo en Javascript?",
+            "respuestas": [
+                "//This is a comment",
+                "<!-- This is a comment -->",
+                "/* This is a comment*/"
+            ],
+            "correcta": "//This is a comment"
+        }
+    ],
+    "react": [
+        {
+            "id": 1,
+            "pregunta": "¿Que es React?",
+            "respuestas": [
+                "Un modulo de node para crear servidores de backend",
+                "Un libro para aprender a programar",
+                "Una librería de Javascript para crear Interfaces Gráficas"
+            ],
+            "correcta": "Una librería de Javascript para crear Interfaces Gráficas"
+        },
+        {
+            "id": 2,
+            "pregunta": "¿Cual es el comando para crear un proyecto en React?",
+            "respuestas": [
+                "npm create-react-project <project-name>",
+                "npm install react-app",
+                "npx create-react-app <project-name>"
+            ],
+            "correcta": "npx create-react-app <project-name>"
+        },
+        {
+            "id": 3,
+            "pregunta": "¿Cual de los siguientes no es un hook?",
+            "respuestas": [
+                "useState()",
+                "useEffect()",
+                "useHTML()"
+            ],
+            "correcta": "useHTML()"
+        },
+        {
+            "id": 4,
+            "pregunta": "¿Como se usan los componentes en React?",
+            "respuestas": [
+                "Solo con clases",
+                "Solo con funciones",
+                "Con clases o funciones"
+            ],
+            "correcta": "Con clases o funciones"
+        },
+        {
+            "id": 5,
+            "pregunta": "¿Cual de los siguientes módulos nos permite enrutar?",
+            "respuestas": [
+                "react",
+                "nodejs",
+                "react-rotuer-dom"
+            ],
+            "correcta": "react-rotuer-dom"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "nombre": "Juan Gabriel Lopez",
+            "email": "gabrielJuan34@gmail.com",
+            "img": "https://randomuser.me/api/portraits/men/51.jpg",
+            "estadisticas": {
+                "tiempo_de_estudio": 1,
+                "respuestas_contestadas": 40,
+                "respuestas_correctas": 20,
+                "respuestas_incorrectas": 20
+            }
+        },
+        {
+            "id": 2,
+            "nombre": "Maria Sofia Ramirez",
+            "email": "sofi234@gmail.com",
+            "img": "https://randomuser.me/api/portraits/women/30.jpg",
+            "estadisticas": {
+                "tiempo_de_estudio": 1,
+                "respuestas_contestadas": 20,
+                "respuestas_correctas": 15,
+                "respuestas_incorrectas": 5
+            }
+        },
+        {
+            "id": 3,
+            "nombre": "Diana Alejandra Barreto",
+            "email": "alejandra34@gmail.com",
+            "img": "https://randomuser.me/api/portraits/women/10.jpg",
+            "estadisticas": {
+                "tiempo_de_estudio": 1,
+                "respuestas_contestadas": 30,
+                "respuestas_correctas": 17,
+                "respuestas_incorrectas": 13
+            }
+        },
+        {
+            "id": 4,
+            "nombre": "Juan Carlos Mendoza",
+            "email": "juancarlos3434@gmail.com",
+            "img": "https://randomuser.me/api/portraits/men/22.jpg",
+            "estadisticas": {
+                "tiempo_de_estudio": 1,
+                "respuestas_contestadas": 23,
+                "respuestas_correctas": 11,
+                "respuestas_incorrectas": 12
+            }
+        },
+        {
+            "id": 5,
+            "nombre": "Sara Sofia Zapata",
+            "email": "gabrielJuan34@gmail.com",
+            "img": "https://randomuser.me/api/portraits/women/31.jpg",
+            "estadisticas": {
+                "tiempo_de_estudio": 1,
+                "respuestas_contestadas": 26,
+                "respuestas_correctas": 14,
+                "respuestas_incorrectas": 12
+            }
+        }
+    ]
+}

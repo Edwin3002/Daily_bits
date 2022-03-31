@@ -5,7 +5,11 @@ import CheckIcon from '@mui/icons-material/Check';
 import ClearIcon from '@mui/icons-material/Clear';
 import { L, Num, Result, Stat } from '../style/app_css';
 
+
 export const Statistics = () => {
+
+
+
   return (
     <div>
       <h4>Statistics</h4>
@@ -18,7 +22,7 @@ export const Statistics = () => {
         <Result>
           <L><TextsmsIcon color="primary"/></L>
           <div>Answered answers</div>
-          <Num>2</Num>
+          <Num>20q</Num>
         </Result>
         <Result>
           <L><CheckIcon color="success"/></L>
