@@ -143,8 +143,9 @@ export let Num = styled.div`
 
 ///Quest
 
-export let Icon = styled.div`
-
+export let Contador = styled.h2`
+    text-align: center;
+    font-size: 150%;
 `
 export let PadreAns = styled.div`
 display: flex;
@@ -152,7 +153,7 @@ flex-direction: column;
 
 `
 export let ContainerUser = styled.div`
-margin: 100px auto;
+margin: 50px auto;
 display: flex;
     height: 50%;
     width: 50%;

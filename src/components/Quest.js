@@ -1,6 +1,6 @@
 import { Icon } from '@mui/material'
-import React, { Component, useEffect, useState } from 'react'
-import { PadreAns, Answer, Stat, User, TextUser, ContainerUser, Check1 } from '../style/app_css'
+import React, {useEffect, useState } from 'react'
+import { PadreAns, Answer, Stat, User, TextUser, ContainerUser, Check1, Contador } from '../style/app_css'
 import user from '../img/User.png'
 import CloseIcon from '@mui/icons-material/Close';
 import { Link } from 'react-router-dom'
@@ -10,7 +10,6 @@ export const Quest = () => {
     ///EStados
     let url = 'https://daily-bits-a.herokuapp.com/'
     let tech = localStorage.getItem('tech')
-    const [ans, setAns] = useState('')
     const [idQ, setIdQ] = useState(1)
     const [question, setQuestion] = useState({
         preguntaQ: '',
@@ -52,7 +51,15 @@ export const Quest = () => {
         handleSumar()
     }, [])
 
-    const { preguntaQ, a, b, c, correct } = question
+    const { preguntaQ, a, b, c, correct } = question;
+
+    const Compare = (answer) => {
+        if(answer===correct){
+            alert('respuesta correcta')
+        } else {
+            alert('respuesta incorrecta')
+        }
+    }
 
     return (
         <PadreAns>
@@ -60,7 +67,7 @@ export const Quest = () => {
 
                 <CloseIcon color="primary" />
             </Icon>
-            <div>{idQ - 1} / 5</div>
+            <Contador>{idQ - 1} / 5</Contador>
             <ContainerUser>
                 <User>
                     <img src={user} alt='user'></img>
@@ -72,19 +79,26 @@ export const Quest = () => {
             </ContainerUser>
             <Stat>
 
-                <Answer onClick={()=>{setAns(a)}}>
+                <Answer onClick={()=> {
+                    Compare(a)
+                }}>
                     {a}
                 </Answer>
-                <Answer onClick={()=>{setAns(b)}}>
+                <Answer onClick={()=> {
+                    Compare(b)
+                }}>
                     {b}
-                </Answer>
-                <Answer onClick={()=>{setAns(c)}}>
+                </Answer> 
+                <Answer onClick={()=> {
+                    Compare(c)
+                }}>
                     {c}
-                </Answer>
+                </Answer>  
             </Stat>
-            <Check1 onClick={() => { handleSumar() }}>Revisar</Check1>
+               <Check1 onClick={() => { handleSumar() }}>Revisar</Check1>
 
         </PadreAns>
     )
 }
+
 
