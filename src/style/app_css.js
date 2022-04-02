@@ -120,6 +120,10 @@ export let LoginOut = styled.div`
   margin-top: 40px;
   color: #ef4565;
   font-weight: bold;
+  font-size: 150%;
+  &:hover{
+    transform: scale(1.05);
+  }
 `;
 ///Statistics
 

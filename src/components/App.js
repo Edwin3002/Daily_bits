@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import {
   Container,
   Google,
@@ -21,11 +21,12 @@ export const App = () => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState(
-    {data:''}
+    { data: '' }
   );
 
-  const {data} = email;
+  const { data } = email;
 
+  ///Ingresa correo
   const handleChanged = ({ target }) => {
     setEmail({
       ...email,
@@ -33,10 +34,11 @@ export const App = () => {
     });
   };
 
+  ///Verificca que el correo si existe
   const Login = async (email) => {
     const api = await fetch(`https://daily-bits-a.herokuapp.com/users?email=${email}`);
     const user = await api.json();
-    if(user.length!==0){
+    if (user.length !== 0) {
       Swal.fire({
         position: 'center',
         icon: 'success',
@@ -71,8 +73,8 @@ export const App = () => {
         <Label>Correo Electronico</Label>
         <Input type="text" onChange={handleChanged} name="data" value={data} placeholder="Ingrese su correo elctronico"></Input>
         <ButtonContainer>
-          <Button color="success" onClick={() => {Login(email.data)}} variant="contained">
-                Iniciar Sesion
+          <Button color="success" onClick={() => { Login(email.data) }} variant="contained">
+            Iniciar Sesion
           </Button>
         </ButtonContainer>
         <GreenText>¿Se te olvidó tu contraseña?</GreenText>

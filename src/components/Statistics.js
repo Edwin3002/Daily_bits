@@ -22,14 +22,14 @@ export const Statistics = () => {
               <AccessTimeIcon />
             </L>
             <div>Time for study (hours)</div>
-            <Num>20</Num>
+            <Num>2</Num>
           </Result>
           <Result>
             <L>
               <TextsmsIcon color="primary" />
             </L>
             <div>Answered answers</div>
-            <Num>2</Num>
+            <Num>20</Num>
           </Result>
           <Result>
             <L>

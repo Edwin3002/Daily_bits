@@ -12,7 +12,7 @@ export const Profile = () => {
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("user")));
     console.log(user)
-  }, []);
+  }, [user]);
   return (
     <>
       <div>

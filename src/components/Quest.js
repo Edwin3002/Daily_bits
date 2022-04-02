@@ -1,5 +1,5 @@
 import { Icon } from '@mui/material'
-import React, {useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { PadreAns, Answer, Stat, User, TextUser, ContainerUser, Check1, Contador } from '../style/app_css'
 import user from '../img/User.png'
 import CloseIcon from '@mui/icons-material/Close';
@@ -11,7 +11,7 @@ export const Quest = () => {
     ///EStados
     let url = 'https://daily-bits-a.herokuapp.com/'
     let tech = localStorage.getItem('tech')
-            const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const [idQ, setIdQ] = useState(1)
     const [question, setQuestion] = useState({
@@ -26,16 +26,16 @@ export const Quest = () => {
     const handleSumar = () => {
         if (idQ === 0) {
             setIdQ(1)
-        }else if(idQ === 6){
+        } else if (idQ === 6) {
             Swal.fire({
                 title: 'Test finalizado',
                 showClass: {
-                  popup: 'animate__animated animate__fadeInDown'
+                    popup: 'animate__animated animate__fadeInDown'
                 },
                 hideClass: {
-                  popup: 'animate__animated animate__fadeOutUp'
+                    popup: 'animate__animated animate__fadeOutUp'
                 }
-              })
+            })
             navigate('/Home')
         }
         setIdQ(idQ + 1)
@@ -63,12 +63,13 @@ export const Quest = () => {
     useEffect(() => {
         // getData(tech, idQ)
         handleSumar()
-    }, [])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
 
     const { preguntaQ, a, b, c, correct } = question;
 
     const Compare = (answer) => {
-        if(answer===correct){
+        if (answer === correct) {
             alert('respuesta correcta')
         } else {
             alert('respuesta incorrecta')
@@ -93,23 +94,23 @@ export const Quest = () => {
             </ContainerUser>
             <Stat>
 
-                <Answer onClick={()=> {
+                <Answer onClick={() => {
                     Compare(a)
                 }}>
                     {a}
                 </Answer>
-                <Answer onClick={()=> {
+                <Answer onClick={() => {
                     Compare(b)
                 }}>
                     {b}
-                </Answer> 
-                <Answer onClick={()=> {
+                </Answer>
+                <Answer onClick={() => {
                     Compare(c)
                 }}>
                     {c}
-                </Answer>  
+                </Answer>
             </Stat>
-               <Check1 onClick={() => { handleSumar() }}>Revisar</Check1>
+            <Check1 onClick={() => { handleSumar() }}>Siguiente pregunta</Check1>
 
         </PadreAns>
     )

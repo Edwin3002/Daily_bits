@@ -34,6 +34,8 @@ export const SignUp = () => {
 
     const { nombre, email } = data;
 
+
+        // Me crea el usuario
     const POST = async() => {
         await fetch("https://daily-bits-a.herokuapp.com/users", {
         method: "POST",
@@ -56,6 +58,7 @@ export const SignUp = () => {
         });
     }
 
+    // me cambia el estado
     const handleChanged = ({ target }) => {
         setData({
           ...data,
@@ -63,6 +66,7 @@ export const SignUp = () => {
         });
       };
     
+      ///Espera a cargar la imagen
       const handleFileChanged = (e) => {  
         setBtnInfo('Subiendo imagen');
         const file = e.target.files[0];
@@ -74,8 +78,6 @@ export const SignUp = () => {
           })
           .catch((err) => console.log(err));
       };
-
-    
 
 
   return (
